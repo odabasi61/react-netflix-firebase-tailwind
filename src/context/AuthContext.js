@@ -1,5 +1,7 @@
+// bu bizim context api. burada oluşturduğumuz fonksiyon veya stateleri istediğimiz componente buradan yollayabiliriz. authcontext.provider sayesinde heryere gönderilebiliyor.
+
 import { createContext, useContext, useEffect, useState } from "react";
-import { auth, db } from "../firebase";
+import { auth, db } from "../auth/firebase";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,

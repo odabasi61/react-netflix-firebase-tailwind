@@ -6,6 +6,7 @@ import axios from "axios";
 
 const Main = () => {
   const [movies, setMovies] = useState([]);
+  const [readMore, setReadMore] = useState(false);
 
   // movies arrayı içinden rastgele bir movie seçiyoruz. bunu ana ekranın üstünde kullanacağız. ekranın her yenilenmesinde farklı bir film fragmanı görünecek.
   const movie = movies[Math.floor(Math.random() * movies.length)];
@@ -26,7 +27,6 @@ const Main = () => {
   //   }
   // };
   // yukardaki fonksiyon 1.yol aşağıdaki usestate ise 2.yol
-  const [readMore, setReadMore] = useState(false);
 
   return (
     <div className="w-full h-[550px] text-white">
